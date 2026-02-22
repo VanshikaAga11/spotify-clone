@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <span>🎵</span>
+                <h2>Mini Music Player</h2>
+            </div>
+            
+            <div class="menu">
+                <div class="menu-item active">🏠 Home</div>
+                <div class="menu-item">🔍 Search</div>
+                <div class="menu-item">📚 Library</div>
+            </div>
+            
+            <div class="playlist-section">
+                <h3>QUICK PLAYLIST</h3>
+                <div class="playlist-item" data-index="0">sunset vibes</div>
+                <div class="playlist-item" data-index="1"> chill night</div>
+                <div class="playlist-item" data-index="2">rock vibes</div>
+            </div>
+        </div>
+        
+        <!-- main content -->
+        <div class="main">
+            <div class="header">
+                <h1>Your Space</h1>
+                <div class="user">👤</div>
+            </div>
+            
+            <div class="featured">
+                <div class="featured-card">
+                    <img src="assets/cover1.jpg" alt="album" onerror="this.src='https://via.placeholder.com/150/1db954/ffffff?text=cover1'">
+                    <div class="card-info">
+                        <h4>Daily mix 1</h4>
+                        <p>calm beats</p>
+                    </div>
+                </div>
+                <div class="featured-card">
+                    <img src="assets/cover2.jpg" alt="album" onerror="this.src='https://via.placeholder.com/150/1db954/ffffff?text=cover2'">
+                    <div class="card-info">
+                        <h4>Daily mix 2</h4>
+                        <p>spiritual music</p>
+                    </div>
+                </div>
+                <div class="featured-card">
+                    <img src="assets/cover3.jpg" alt="album" onerror="this.src='https://via.placeholder.com/150/1db954/ffffff?text=cover3'">
+                    <div class="card-info">
+                        <h4>Daily mix 3</h4>
+                        <p>rock beats</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="songs-section">
+                <h2>songs for you</h2>
+                <div class="songs-list" id="songs-list">
+        
+                </div>
+            </div>
+        </div>
+        
+        <!-- music player bar (bottom) -->
+        <div class="player-bar">
+            <div class="now-playing">
+                <img id="current-cover" src="assets/cover1.jpg" alt="now playing" onerror="this.src='https://via.placeholder.com/50/1db954/ffffff?text=♪'">
+                <div class="song-info">
+                    <div id="current-title">not playing</div>
+                    <div id="current-artist">select a song</div>
+                </div>
+            </div>
+            
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button id="shuffle">🔀</button>
+                    <button id="prev">⏮️</button>
+                    <button id="play-btn" class="play-button">▶️</button>
+                    <button id="next">⏭️</button>
+                    <button id="repeat">🔁</button>
+                </div>
+                <div class="progress-area">
+                    <span id="current-time">0:00</span>
+                    <div class="progress-bar" id="progress-bar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+            
+            <div class="volume-control">
+                <span>🔊</span>
+                <div class="volume-bar" id="volume-bar">
+                    <div class="volume-level" id="volume-level" style="width: 70%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
