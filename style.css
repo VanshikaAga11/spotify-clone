@@ -155,7 +155,7 @@ body {
     color: #b3b3b3;
 }
 
-/* songs list */
+
 .songs-section {
     margin-top: 20px;
 }
@@ -215,7 +215,7 @@ body {
     font-size: 14px;
 }
 
-/* player bar */
+
 .player-bar {
     grid-column: 2;
     background: #181818;
@@ -523,4 +523,5 @@ body {
 .header div:last-child {
     display: flex;
     align-items: center;
+
 }
